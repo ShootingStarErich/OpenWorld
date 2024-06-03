@@ -1,8 +1,11 @@
 package UebungExcep.ArasakaAegisSecurity;
 
 import javax.swing.JFrame;
+
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import javax.swing.JButton;
 
 public class GuiAegis extends JFrame {
     // (View) ist für die Darstellung verantwortlich
@@ -14,9 +17,12 @@ public class GuiAegis extends JFrame {
 
         windowSize();
 
+        startButton();
+
         setResizable(false);
 
         setLocationRelativeTo(null);
+
         setVisible(true);
     }
 
@@ -27,6 +33,15 @@ public class GuiAegis extends JFrame {
 
         setSize(width, height);
 
+    }
+
+    private void startButton() {
+        JButton startButton = new JButton("Klick mich");
+
+        setLayout(new BorderLayout());
+        add(startButton, BorderLayout.CENTER);
+
+        startButton.getActionListeners();
     }
 
 }

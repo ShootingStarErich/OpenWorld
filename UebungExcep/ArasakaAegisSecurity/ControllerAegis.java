@@ -9,6 +9,7 @@ public class ControllerAegis {
 
     // wenn daten kommen oder sich etwas ändert soll sich die view auch ändern
     // können
+
     public void updateView() {
 
     }
