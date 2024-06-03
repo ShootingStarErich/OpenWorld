@@ -1,6 +1,6 @@
 package UebungExcep.ArasakaAegisSecurity;
 
-public class Main {
+public class MainAegis {
 
     public static void main(String[] args) {
 
